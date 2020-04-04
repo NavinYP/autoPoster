@@ -18,10 +18,10 @@ async def on_ready():
 
 
 @client.command()
-async def pic(channel, idol):
-    fileList = os.listdir(f'{PATH}/{idol}')
-    print(fileList)
+async def pic(channel, folder):
+    fileList = os.listdir(f'{PATH}/{folder}')
+    print(f'Sending 5 images from {folder}')
     for i in range(5):
-        await channel.send(file=discord.File(f'{PATH}/{idol}/{random.choice(fileList)}'))
+        await channel.send(file=discord.File(f'{PATH}/{folder}/{random.choice(fileList)}'))
 
 client.run(TOKEN)
