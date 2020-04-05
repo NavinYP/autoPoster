@@ -7,7 +7,12 @@ This is the most basic version of the bot that I have written. And this bot has 
 2. Create a .env file with the following attributes filled.
 
   DISCORD_TOKEN = [Your Discord token from the developer portal]
+  
   FOLDER_PATH = [The local folder path you want to use] 
+  
+3. Add the bot to your server using the Discord Developer Portal.
+4. Run the bot.py on your computer.
+5. Use the .pic [subfolderName] command in the server.
   
 Use without '[]'. And the local folder path is the parent folder which has the subfolders.
 
