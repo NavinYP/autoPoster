@@ -23,5 +23,6 @@ async def pic(channel, folder):
     print(f'Sending 5 images from {folder}')
     for i in range(5):
         await channel.send(file=discord.File(f'{PATH}/{folder}/{random.choice(fileList)}'))
+    print('Task Completed!')
 
 client.run(TOKEN)
